@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/3ef3559250.js" crossorigin="anonymous"></script>
+    <style>
+        /* Styles for resume sections */
+        .resume-section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        /* Styles for collapsible sections */
+        .collapsible-section {
+            margin-bottom: 30px;
+        }
+        /* Styles for collapsible button */
+        .collapsible-btn {
+            background-color: #87CEEB;
+            color: white;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /* Styles for collapsible content */
+        .collapsible-content {
+            padding: 0 18px;
+            display: block; /* Make it always open initially */
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        /* Styles for skill bars */
+        .skill-bar {
+            width: 100%;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            height: 20px;
+            margin-top: 5px;
+        }
+        /* Styles for skill levels */
+        .skill-level {
+            height: 100%;
+            background-color: #87CEEB;
+            border-radius: 5px;
+            line-height: 20px; /* Adjust line height to vertically center text */
+            text-align: right; /* Align text to the right */
+        }
+        /* Styles for individual skills */
+        .skill {
+            margin-bottom: 15px; /* Add margin bottom between each skill */
+        }
+        /* Add space between sections */
+        .section-space {
+            margin-bottom: 80px;
+        }
+        /* Styles for slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        /* Hide the slides by default */
+        .mySlides {
+            display: none;
+            padding: 20px;
+            margin: auto;
+        }
+        /* Text styles */
+        .text {
+            color: #2b2929;
+            font-size: 20px; /* Font size for the text within the project slider */
+            text-align: center;
+        }
+        /* Styles for previous and next buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -26px;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 5px;
+            user-select: none;
+            z-index: 1;
+        }
+        /* Position the 'prev' button on the left edge */
+        .prev {
+            left: 0;
+        }
+        /* Position the 'next' button on the right edge */
+        .next {
+            right: 0;
+        }
+        /* Hover styles for previous and next buttons */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        /* Styles for slideshow card */
+        .mySlides .w3-card {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100px; /* Set the height of the card */
+            padding: 20px; /* Adjust padding as needed */
+            margin: auto; /* Center the card within the slide */
+        }
+    </style>
+</head>
+<body>
+<header class="w3-container w3-center w3-light-blue w3-padding-32">
+    <h1>SYAFIQAH NORAZIZI</h1>
+    <p>Internship Placement</p>
+</header>
+<!-- Navigation bar -->
+<div class="w3-bar w3-blue">
+    <a href="#aboutme" class="w3-bar-item w3-button">About Me</a>
+    <a href="#skills" class="w3-bar-item w3-button">Skills</a>
+    <a href="#project" class="w3-bar-item w3-button">Project</a>
+    <a href="#education" class="w3-bar-item w3-button">Education</a>
+    <a href="#experience" class="w3-bar-item w3-button">Work Experience</a>
+    <a href="#extra" class="w3-bar-item w3-button">Extra Cocurricular</a>
+</div>
+
+<!-- About Me section -->
+<div style="min-height:100vh;overflow-y: auto;">
+    <div id="aboutme" class="w3-container w3-margin resume-section ">
+        <div class="w3-row-padding">
+            <!-- Left column with personal information -->
+            <div class="w3-half w3-container w3-margin-bottom w3-light-grey w3-padding resume-left" style="height: 1510px;">
+                <div class="w3-padding w3-center ">
+                    <img src="piqah.jpg" alt="profile_pic" class="w3-image" style="width: 65%; border-radius: 50%; ">
+                </div>
+                <!-- About Me content -->
+                <div class="w3-center w3-padding-32 section-space">
+                    <div class="aboutme section-space">
+                        <h2>ABOUT ME</h2>
+                        <!-- Personal information -->
+                        <p>Hi there! I'm Syafiqah, a student studying IT at Universiti Utara Malaysia. I'm really excited about technology and how it can solve real-world problems. I've been learning web development and design, and I'm eager to put my skills into action through an internship. I'm a quick learner and ready to jump in and contribute to your team!</p>
+                        <p><strong>Email:</strong> <a href="mailto:piqah914@gmail.com">piqah914@gmail.com</a></p>
+                        <p><strong>Phone:</strong> 019-7617833</p>
+                        <p><strong>Address:</strong> Kampung Gajah, Perak</p>
+                    </div>
+                    <!-- Skills section -->
+                    <div id="skills" class="w3-container section-space">
+                        <h2>SKILLS</h2>
+                        <!-- Individual skill bars -->
+                        <div class="skill">
+                            <label for="web-development"><i class="fas fa-code"></i> Web Development</label>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 51%;">51%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <label for="web-designing"><i class="fas fa-pen-nib"></i> Web Designing</label>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%;">70%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <label for="video-editing"><i class="fas fa-video"></i> Video Editing</label>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <label for="photoshop"><i class="fas fa-image"></i> Photoshop</label>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 50%;">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project section with slideshow -->
+                    <div id="project" class="w3-container section-space">
+                        <h2>PROJECT</h2>
+                        <div id="project-slideshow" class="slideshow-container ">
+                            <!-- Slides for projects -->
+                            <div class="mySlides fade section-space">
+                                <div class="w3-card w3-padding text" style="height: 100px;">My Befit Organizer Mobile App (2024)</div>
+                            </div>
+                            <div class="mySlides fade section-space">
+                                <div class="w3-card w3-padding text" style="height: 100px;">GPS Attendance (2023)</div>
+                            </div>
+                            <!-- Navigation buttons for the slideshow -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right column with education, work experience, and extracurriculars -->
+            <div class="w3-half w3-container w3-padding w3-pale-yellow w3-padding resume-right">
+                <!-- Education section -->
+                <div id="education" class="collapsible-section w3-row w3-margin">
+                    <button class="collapsible-btn w3-button w3-block">EDUCATION</button>
+                    <div class="collapsible-content">
+                        <!-- List of education entries -->
+                        <div class="w3-container w3-row w3-padding" style="margin: auto;">
+                            <!-- Individual education entry -->
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>2024-2021</p>
+                                <p>Universiti Utara Malaysia (UUM)</p>
+                                <p>Bachelor of Science with Honour (Information Technology)</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>2020-2019</p>
+                                <p>Johor Matriculation</p>
+                                <p>Module 3</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>2014-2018</p>
+                                <p>Sekolah Menengah Kebangsaan Sungai Kapar Indah</p>
+                                <p>Science Stream</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work experience section -->
+                <div id="experience" class="collapsible-section w3-row w3-margin">
+                    <button class="collapsible-btn w3-button w3-block">WORK EXPERIENCE</button>
+                    <div class="collapsible-content">
+                        <!-- List of work experience entries -->
+                        <div class="w3-container w3-row w3-padding" style="margin: auto;">
+                            <!-- Individual work experience entry -->
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>May 2023</p>
+                                <p>Elderly Care Volunteer</p>
+                                <p>Visiting nursing homes or senior centers to spend time with elderly residents, engage in activities, and provide companionship and support.</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>February 2022</p>
+                                <p>Retail Associate</p>
+                                <p>Managed social media accounts for multiple clients, creating engaging content and implementing marketing strategies.</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>August 2020</p>
+                                <p>Cashier</p>
+                                <p>Working at a convenience store, handling transactions and assisting customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Extracurricular activities section -->
+                <div id="extra" class="collapsible-section w3-row w3-margin">
+                    <button class="collapsible-btn w3-button w3-block">EXTRA COCURRICULAR</button>
+                    <div class="collapsible-content">
+                        <!-- List of extracurricular activities -->
+                        <div class="w3-container w3-row w3-padding" style="margin: auto;">
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>Exco Information Technology UUM Association (2024)</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>Ajk TalkGpt: How To Prompt (KOMPUTER-A231-6)(2024)</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>Program Kepimpinan Alturistik(PKA) Siri 1 UUM (PKA UUM)(2023)</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>Exco Information Technology UUM Association (2023)</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>Ajk Hope-Day: I-TECH (KOMPUTER-A231-2)(2023)</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>Ajk Meliorisme Chroma Colour Run (EMSS-A221-1)(2022)</p>
+                            </div>
+                            <div class="w3-card w3-container w3-col mycard ">
+                                <p>Ultras UUM 1 : UUM Sihat 2022 (2022)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+    <a>&copy; </a>
+    <!-- Links to social media profiles -->
+    <a href="https://www.instagram.com/syffqhcn/" class="w3-bar-item w3-button">Instagram</a>
+    <a href="https://github.com/nrlsyfqh" class="w3-bar-item w3-button">GitHub</a>
+</footer>
+
+<!-- JavaScript for slideshow functionality -->
+<script>
+    // Open all collapsible sections when the page loads
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.collapsible-content').forEach(content => {
+            content.style.display = "block";
+        });
+        // Collapsible sections functionality
+        document.querySelectorAll('.collapsible-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                let content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    });
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+</body>
+</html>
